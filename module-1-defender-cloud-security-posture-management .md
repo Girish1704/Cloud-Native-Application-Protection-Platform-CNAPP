@@ -135,15 +135,15 @@ In this exercise, you will use Cloud Security Explorer in Read-Only mode to buil
 
 1. Explore your Environment for Storage Accounts exposed to the Internet. From the drop-down click on **Data (1)** then select **Object storage (2)** and choose **Azure storage accounts (3)** from the list and click **Done (4)**.
 
-      ![](images/m1-img16.png)
+      ![](images/cnn-glab1-gtr-ex1-g14.png)
 
  - Click on **+ (1)** next to **Azure storage accounts**, then from the **Select condition** drop-down menu click on **Networking (2)** and select **Exposed to the internet (3)** and click **Search**. 
 
-      ![](images/m1-img17.png)
+      ![](images/cnn-glab1-gtr-ex1-g15.png)
 
 1. Explore your Environment for Storage Accounts with a Sensitive Data. Change the condition to **Data (1)** and click on **Contains sensitive data (2)**.
 
-      ![](images/m1-img18.png)
+      ![](images/cnn-glab1-gtr-ex1-g16.png)
 
 This exercise focuses on constructing and analyzing queries with Cloud Security Explorer in Read-Only mode to gain insights into cloud security data without changing configurations.
 
