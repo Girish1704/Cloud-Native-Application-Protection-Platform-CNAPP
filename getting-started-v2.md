@@ -76,29 +76,25 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
 ## Let's Get Started with Azure Portal
 
-1. On your Lab virtual machine, click on the **Azure Portal** icon to sign in to the Azure.
+1. On the lab virtual machine desktop, select the **Azure Portal** icon to open and sign in to Azure.
 
-    ![](./images/signin0-0903.png) 
+   ![](./images/cnn-glab1-gtr-gs-g4.png) 
 
 1. On the **Sign in** blade, you will see a login screen, in which enter the following email/username and password and then click on **Sign in**.  
 
    * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
 
-        ![](./images/signin1-0903.png) 
+      ![](./images/cnn-glab1-gtr-gs-g5.png) 
 
    * **Temperory Access Pass**:  <inject key="AzureAdUserPassword"></inject>
   
-        ![](./images/signin2-0903.png)
+      ![](./images/cnn-glab1-gtr-gs-g6.png)
   
-1. If you see the pop-up **Stay Signed in?** click **Yes**.
+1. If you see the pop-up **Stay Signed in?** click **No**.
 
-    ![](./images/g3.jpg)
-
-1. If you see the pop-up **You have free Azure Advisor recommendations!** close the window to continue the lab. 
+   ![](./images/cnn-glab1-gtr-gs-g7.png) 
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
-
-    ![](./images/g4.jpg)
 
 ## Support Contact
 
@@ -111,6 +107,6 @@ Learner Support Contacts:
 
 Click **Next** from the bottom right corner to embark on your Lab journey!
 
-![](./images/up4.png)
+![](./images/cnn-glab1-gtr-gs-g8.png)
 
 ### Happy Learning!!
