@@ -4,7 +4,7 @@
 
 ## Overview
  
-A hypothetical organization, "Acme Inc." had a robust cybersecurity infrastructure in place. However, one day, an attacker used a brute force or password spraying attack to gain access to an Internet-exposed server of the organization. 
+A hypothetical organization, "Acme Inc.," had a robust cybersecurity infrastructure in place. However, one day, an attacker used a brute force or password spraying attack to gain access to an Internet-exposed server of the organization. 
 
 The attacker could quickly move laterally through the network, exploiting vulnerabilities on the Internet-exposed servers and gaining access to the organization's Storage Accounts, SQL servers, and Key Vaults. The SOC department was alerted by Defender for Cloud on the “Brute Force, Password Spray” IOC/IOA, and quickly realized something was wrong when they noticed unusual activity on the servers and Storage Accounts. 
 
@@ -12,9 +12,9 @@ In response to the attack, the security engineers leveraged the attack path anal
 
 However, the IT department didn't stop there. They also took a proactive approach by implementing security recommendations to fix the vulnerabilities on the Internet-exposed servers and prevent similar attacks in the future. They also implemented a robust incident response plan and conducted regular security training for employees to educate them on how to identify and avoid brute force and password spraying attacks. 
 
-Thanks to the combination of both reactive and proactive measures, Acme Inc was able to prevent a major data breach and keep their sensitive information safe. This hypothetical use case demonstrates the importance of having both a reactive and proactive approach when it comes to cybersecurity, including performing attack path and security risk analysis, implementing security recommendations, assigning/managing change actions to the proper owners, and educating employees to prevent future attacks.  
+Thanks to the combination of both reactive and proactive measures, Acme Inc was able to prevent a major data breach and keep its sensitive information safe. This hypothetical use case demonstrates the importance of having both a reactive and proactive approach when it comes to cybersecurity, including performing attack path and security risk analysis, implementing security recommendations, assigning/managing change actions to the proper owners, and educating employees to prevent future attacks.  
 
-Next exercise will show how to leverage the Attack Path feature of Defender for CSPM. 
+The next exercise will show how to leverage the Attack Path feature of Defender for CSPM. 
 
 ## Lab Objectives: 
 
@@ -22,12 +22,12 @@ You will be able to complete the following exercises:
 
 - Enabling Defender CSPM plan (Read Only)
 - Explore Attack Paths in your Environment (Read Only)
-- Build query with Cloud Security Explorer (Read Only) 
+- Build a query with Cloud Security Explorer (Read Only) 
 - Assign Governance Rule
 
 ## Exercise 1: Enabling Defender CSPM plan (Read Only)
 
-In this exercise, you will learn how to enable Defender for CSPM, and leverage Defender for CSPM Capabilities
+In this exercise, you will learn how to enable Defender for CSPM and leverage Defender for CSPM Capabilities
 
    >**Note:** To gain access to the capabilities provided by Defender CSPM, you'll need to <a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-enhanced-security">enable the Defender Cloud Security Posture Management (CSPM) plan </a> on your subscription
 
@@ -55,9 +55,9 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
       ![](images/cnn-glab1-gtr-ex1-g2.png)
 
-      >**Note:** Agentless scanning for VMs provides vulnerability assessment and software inventory in 24 hours. Leave the setup and comeback after 24 hours.
+      >**Note:** Agentless scanning for VMs provides vulnerability assessment and software inventory in 24 hours. Leave the setup and come back after 24 hours.
 
-In this exercise, you have learnt about Enabling Defender Cloud Security Posture Management (CSPM) in Read-Only mode allows users to view and monitor security posture and compliance without making changes to settings or configurations.
+In this exercise, you have learnt that Enabling Defender Cloud Security Posture Management (CSPM) in Read-Only mode allows users to view and monitor security posture and compliance without making changes to settings or configurations.
 
 ## Exercise 2: Explore Attack Paths in your Environment (Read Only)
 
@@ -67,7 +67,7 @@ In this exercise, you will investigate and review potential attack paths in your
 
     ![](./images/cnn-glab1-gtr-ex1-g3.png)
 
-    >**Note:** You may not find any attack paths in your environment as we have enabled Defender CSPM recently, it will take time. As this is a read-only task just continue with further steps.
+    >**Note:** You may not find any attack paths in your environment, as we have enabled Defender CSPM recently, it will take time. As this is a read-only task, just continue with further steps.
 
 1. Click on **Attack path**. You will find the Attack Paths in your Environment. 
 
@@ -83,7 +83,7 @@ In this exercise, you will investigate and review potential attack paths in your
 
 This exercise involves examining and reviewing potential attack paths in your environment in Read-Only mode to gain insights into security risks without altering any configurations.
 
-## Exercise 3: Build query with Cloud Security Explorer (Read Only)
+## Exercise 3: Build a query with Cloud Security Explorer (Read Only)
 
 In this exercise, you will use Cloud Security Explorer in Read-Only mode to build and review queries that analyze your cloud security posture without making any modifications.
 
@@ -111,7 +111,7 @@ In this exercise, you will use Cloud Security Explorer in Read-Only mode to buil
 
 1. You will find the list of SQL servers with managed identity.
 
-1. You can also explore and build your own queries using query builder. Clear the previous query by clicking **Clear All** and **Confirm**.
+1. You can also explore and build your own queries using the query builder. Clear the previous query by clicking **Clear All** and **Confirm**.
 
 1. In the **Query builder**, select **Compute (1)**, choose **Virtual machines (2)**, check **Azure Virtual machines (3)**, and then select **Done (4)**.
 
@@ -137,7 +137,7 @@ In this exercise, you will use Cloud Security Explorer in Read-Only mode to buil
  
       ![](images/cnn-glab1-gtr-ex1-g12.png)
 
-1. Explore your Environment for Storage Accounts exposed to the Internet. From the drop-down click on **Data (1)** then select **Object storage (2)** and choose **Azure storage accounts (3)** from the list and click **Done (4)**.
+1. Explore your Environment for Storage Accounts exposed to the Internet. From the drop-down, click on **Data (1)**, then select **Object storage (2)** and choose **Azure storage accounts (3)** from the list and click **Done (4)**.
 
       ![](images/cnn-glab1-gtr-ex1-g14.png)
 
@@ -176,7 +176,7 @@ In this exercise, you will learn how to assign governance rules to manage and en
 
          ![](images/governance-conditions.png)
 
-1. On the **Rule created succsessfuly** pop-up select the check box next to **Apply rule to the existing recommendations that are unassigned** and click on **Ok**.
+1. On the **Rule created successfully** pop-up, select the check box next to **Apply rule to the existing recommendations that are unassigned** and click on **Ok**.
 
       ![](images/a1.6.png)
 
@@ -198,6 +198,6 @@ This exercise involves assigning governance rules to ensure compliance and enfor
 
 ## Summary
 
-In this module,you have completed essential cloud security tasks, starting with enabling the Defender CSPM plan in Read-Only mode to review security posture then exploring attack paths and potential vulnerabilities in your environment, build and analyze queries using Cloud Security Explorer, and finally, assigned governance rules to ensure compliance and effective policy management.
+In this module, you have completed essential cloud security tasks, starting with enabling the Defender CSPM plan in Read-Only mode to review security posture, then exploring attack paths and potential vulnerabilities in your environment, building and analyzing queries using Cloud Security Explorer, and finally, assigning governance rules to ensure compliance and effective policy management.
 
 
