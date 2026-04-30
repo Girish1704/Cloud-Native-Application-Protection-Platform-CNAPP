@@ -63,9 +63,9 @@ In this exercise, you have learnt about Enabling Defender Cloud Security Posture
 
 In this exercise, you will investigate and review potential attack paths in your environment in Read-Only mode to understand vulnerabilities without making changes.
 
-1. From **Defender for Cloud** menu, open **Attack path analysis**.
+1. From the **Defender for Cloud** menu, expand **General (1)**, and then select **Attack path analysis (2)**.
 
-    ![](./images/upimg1.png)
+    ![](./images/cnn-glab1-gtr-ex1-g3.png)
 
     >**Note:** You may not find any attack paths in your environment as we have enabled Defender CSPM recently, it will take time. As this is a read-only task just continue with further steps.
 
@@ -89,11 +89,15 @@ In this exercise, you will use Cloud Security Explorer in Read-Only mode to buil
 
 1. From **Defender for Cloud** menu, open the **Cloud Security Explorer** page.
 
-      ![](images/m1-img6.png)
+      ![](images/cnn-glab1-gtr-ex1-g4.png)
     
-1. Select a predefined query Template **“Internet exposed VMs with high severity vulnerabilities” (1)** and click on **Search (2)**.
+1. Select a predefined query Template **“Internet exposed VMs with high severity vulnerabilities”**.
 
-      ![](images/m1-img7.png)
+      ![](images/cnn-glab1-gtr-ex1-g5.png)
+
+1. Scroll up, and then select **Search**.
+
+      ![](images/cnn-glab1-gtr-ex1-g6.png)
 
 1. You will find the list of VMs with high severity Vulnerabilities.
 
@@ -103,27 +107,37 @@ In this exercise, you will use Cloud Security Explorer in Read-Only mode to buil
 
 1. You will find the list of SQL servers with managed identity.
 
-1. You can also explore and build your own queries using query builder. Clear the previous query by clicking **Clear All** and **Confirm**. Next, from the dropdown select **Compute (1) -> Virtual machines (2) -> Azure Virtual Machines (3)** then click **Done (4)**. Click Search to view VMs with this vulnerability.
+1. You can also explore and build your own queries using query builder. Clear the previous query by clicking **Clear All** and **Confirm**.
 
-      ![](images/m1-img9.png)
+1. In the **Query builder**, select **Compute (1)**, choose **Virtual machines (2)**, check **Azure Virtual machines (3)**, and then select **Done (4)**.
 
- - Click on **+ (1)** and under select condition, select **Security (2)** -> **vulnerable to remote code execution (3)**.
+      ![](images/cnn-glab1-gtr-ex1-g7.png)
 
-      ![](images/m1-img10.png)
+ - Select the **+** icon to add a filter.
 
-1. Explore your Environment for Virtual Machines with a specific vulnerability. Click on **Vulnerabilities (1)** and select **By CVE ID (2)**.
+      ![](images/cnn-glab1-gtr-ex1-g8.png)
 
-      ![](images/m1-img11.png)
+ - In the filter, select **Select condition (1)**, choose **Security (2)**, and then select **Vulnerable to remote code execution (3)**.
+
+      ![](images/cnn-glab1-gtr-ex1-g9.png)
+
+1. Select the **+** icon to add another filter.
+
+      ![](images/cnn-glab1-gtr-ex1-g8.png)
+
+ - In the filter, select **Select condition (1)**, choose **Vulnerabilities (2)**, and then select **By CVE ID (3)**.
+
+      ![](images/cnn-glab1-gtr-ex1-g13.png)
  
-- Search for Virtual Machines that have a specific Vulnerability of **CVE-2021-44228** or **CVE-2021-45046**.
+ - Search for Virtual Machines that have a specific Vulnerability of **CVE-2021-44228** or **CVE-2021-45046**.
  
-      ![](images/m1-img15.png)
+      ![](images/cnn-glab1-gtr-ex1-g12.png)
 
 1. Explore your Environment for Storage Accounts exposed to the Internet. From the drop-down click on **Data (1)** then select **Object storage (2)** and choose **Azure storage accounts (3)** from the list and click **Done (4)**.
 
       ![](images/m1-img16.png)
 
-- Click on **+ (1)** next to **Azure storage accounts**, then from the **Select condition** drop-down menu click on **Networking (2)** and select **Exposed to the internet (3)** and click **Search**. 
+ - Click on **+ (1)** next to **Azure storage accounts**, then from the **Select condition** drop-down menu click on **Networking (2)** and select **Exposed to the internet (3)** and click **Search**. 
 
       ![](images/m1-img17.png)
 
