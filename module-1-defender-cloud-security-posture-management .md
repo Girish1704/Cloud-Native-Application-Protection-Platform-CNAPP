@@ -101,9 +101,13 @@ In this exercise, you will use Cloud Security Explorer in Read-Only mode to buil
 
 1. You will find the list of VMs with high severity Vulnerabilities.
 
-1. Select a predefined query Template **“Internet exposed SQL servers with managed identity”** and click on **Search**.
+1. Select a predefined query Template **“Internet exposed SQL servers with managed identity”**.
 
-      ![](images/m1-img8.png)
+      ![](images/cnn-glab1-gtr-ex1-g17.png)
+
+1. Scroll up, and then select **Search**.
+
+      ![](images/cnn-glab1-gtr-ex1-g6.png)
 
 1. You will find the list of SQL servers with managed identity.
 
