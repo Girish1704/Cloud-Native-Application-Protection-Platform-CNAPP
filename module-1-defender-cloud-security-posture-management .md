@@ -165,7 +165,7 @@ In this exercise, you will learn how to assign governance rules to manage and en
 
 1. Enter **Rule name** as `CNAPP-Rule` **(1)**, select **Scope** at subscription level **(2)** and **Priority** `100` **(3)**. Click **Next (4)**.
 
-      ![](images/m1-img21.png)
+      ![](images/cnn-glab1-gtr-ex1-g18.png)
     
 1. Under **conditions** provide the below details and click **Create (5)**
 	
@@ -174,7 +174,7 @@ In this exercise, you will learn how to assign governance rules to manage and en
       - **Email address**: <inject key="AzureAdUserEmail"></inject> **(3)**
       - **Remediation timeframe**: `90 days` **(4)**
 
-            ![](images/governance-conditions.png)
+         ![](images/governance-conditions.png)
 
 1. On the **Rule created succsessfuly** pop-up select the check box next to **Apply rule to the existing recommendations that are unassigned** and click on **Ok**.
 
