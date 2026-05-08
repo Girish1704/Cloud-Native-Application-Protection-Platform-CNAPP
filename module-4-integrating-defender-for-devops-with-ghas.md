@@ -15,19 +15,23 @@ You will be able to complete the following exercises:
 
 ### Exercise 1: Connecting your GitHub organization
 
-In this exercise, you will how to connect GitHub account with your Organization. 
+In this exercise, you will learn how to connect your GitHub account with your Organization. 
 
-1. Navigate and login to the GitHub using the following URL on the **Labvm**, by fetching the details from **Environment Details (1)** page on the right tab, click on **Licenses (2)** tab and copy the **GitHub credentials (3)**.
+1. Navigate and log in to GitHub using the following URL on the **Labvm**, by fetching the details from **Environment Details (1)** page on the right tab, click on **Licenses (2)** tab, and copy the **GitHub credentials (3)**.
 
       ```
       https://github.com/
       ```
 
-      ![](images/gitcred.png)
+      ![](images/cnn-glab4-dvr-ex1-g1.png)
 
-1. For Device Verification Code, use the same credentials as in the previous step, open http://outlook.office.com/ in a private window and enter the same username and password used for GitHub Account login. Copy the verification code and Paste code it in Device verification.
+1. For **Device Verification Code**, use the same credentials as in the previous step, open a private browser window, sign in with the same username and password used for the GitHub account login, copy the verification code, and then paste it into **Device verification**.
 
-   ![](images/email-verify.png)
+      ```
+      http://outlook.office.com/
+      ```
+
+      ![](images/email-verify.png)
 
 1. Navigate to following Git Repository **(1)** and click on **Fork (2)**.
    
@@ -37,53 +41,83 @@ In this exercise, you will how to connect GitHub account with your Organization.
      
     ![](images/m4-img22.png)
 
-1. In **Create a new fork**, disable **Copy the main branch only (1)** and click **Create fork (1)**. 
+1. In **Create a new fork**, verify the **Owner (1)** selection, disable **Copy the main branch only (2)**, and then select **Create fork (3)**.
 
-      ![](images/m4-img23.png)   
+      ![](images/cnn-glab4-dvr-ex1-g2.png)   
 
-1. Go to **Microsoft-Defender-for-cloud** repository,click on **Settings (1)**, under **Actions (2)** select **General (3)** and set the **Workflow Permissions** to **Read and write permissions (4)** then click **Save (5)**.
+1. On the **Microsoft-Defender-for-cloud** repository,click on **Settings**.
 
-      ![](images/m4-img18.png)
+      ![](images/cnn-glab4-dvr-ex1-g3.png) 
 
-1.	Go to [Azure Portal](http://portal.azure.com/), search for **Microsoft Defender for Cloud (1)** and then click on it from the search results **(2)**. 
+1. Expand **Actions (1)**, and then select **General (2)**.
 
-      ![](images/m1-img1.png)
+      ![](images/cnn-glab4-dvr-ex1-g4.png) 
 
-1.	In the left navigation pane, click **Environment settings (1)**, click the **Add environment (2)** button and click **GitHub (3)**. 
+1. Under **Workflow permissions**, select **Read and write permissions (1)**, and then choose **Save (2)**.
 
-      ![](images/m4a-img1.png)
+      ![](images/cnn-glab4-dvr-ex1-g5.png) 
 
-1. In **Create GitHub connection** page, enter the **Connector name** for the connector as `CNAPP-git` **(1)**, select your **Subscription (2)**, select **asclab (3)** **Resource Group** and select any **Location (4)**.	Click **Next: Configure access > (5)** button to continue.
+1. Go to the Azure portal by using the following URL.
 
-      ![](images/cnapp5.png)
+      ```
+      http://portal.azure.com/
+      ```
 
-1. Click **Authorize** button. If you get an authorization pop-up click **Authorize DevOps security**.
+1. Search for **Microsoft Defender for Cloud (1)**, and then select it from the search results **(2)**.
 
-      ![](images/cnapp6.png)
+      ![](images/cnn-glab4-dvr-ex1-g6.png) 
 
-      ![](images/m4-img5.png)
+1. In the left navigation pane, expand **Management (1)**, select **Environment settings (2)**, choose **Add environment (3)**, and then select **GitHub (4)**.
 
-1. Now click **Install** button under **Install DevOps security app**. If this is the first time you’re authorizing your DevOps connection, you’ll receive a pop-up screen, that will ask you confirmation of which repository you'd like to install the app. Select your **GitHub repository**. 
+      ![](images/cnn-glab4-dvr-ex1-g7.png)
 
-      ![](images/cnapp7.png)
+1. In the **GitHub connection** page, configure the following settings:
+
+      - Enter `CNAPP-git` in **Connector name (1)**.
+      - Select your **Subscription (2)**.
+      - Select **asclab (3)** as the **Resource group**.
+      - Select any **Location (4)**.
+      - Select **Next: Select capabilities > (5)** to continue.
+
+          ![](images/cnn-glab4-dvr-ex1-g8.png)
+      
+1. In **Select capabilities**, enable **Defender CSPM (1)**, and then select **Next : Configure access > (2)**.
+
+      ![](images/cnn-glab4-dvr-ex1-g9.png)
+
+1. In **Configure access**, select **Authorize** under **Authorize DevOps security**.
+
+      ![](images/cnn-glab4-dvr-ex1-g10.png)
+
+1. In the pop-up window, select **Authorize**.
+
+      ![](images/cnn-glab4-dvr-ex1-g11.png)
+
+1. Under **Install DevOps security app**, select **Install**.
+
+      ![](images/cnn-glab4-dvr-ex1-g12.png)
+
+1. In **Install Microsoft Security DevOps**, select the **cloudlabsuser** GitHub account.
+
+      ![](images/cnn-glab4-dvr-ex1-g13.png)
+
+1. In **Install Microsoft Security DevOps**, select **All repositories (1)**, and then choose **Install (2)**.
   
-      ![](images/m4-img7.png)
+      ![](images/cnn-glab4-dvr-ex1-g14.png)
 
-1. Choose **All repositories (1)** and click on **Install (2)**
+1. After the DevOps security app installation is completed, select **Next: Review and generate >**.
 
-      ![](images/m4-img8.png)
+      ![](images/cnn-glab4-dvr-ex1-g15.png)
 
-1. Back in the **Azure portal**, you’ll notice that the extension is installed, click on **Review and generate** button to continue.  
+1. Review the configuration settings, and then select **Create**.
 
-      ![](images/cnapp8.png)
+      ![](images/cnn-glab4-dvr-ex1-g16.png)
 
-1. Click **Create**.
+1. In the left navigation pane, expand **Management (1)**, select **Environment settings (2)**, refresh the page by selecting **Refresh (3)**, and verify that the **CNAPP-git (4)** GitHub connector is displayed.
 
-      ![](images/m4-img10.png)
+      ![](images/cnn-glab4-dvr-ex1-g17.png)
 
-1. Navigating to the **Environment Settings** under **Microsoft Defender for Cloud**, you’ll notice the ***GitHub*** Connection was successfully created. 
-
-      ![](images/m4-img11.png)
+      > **Note:** It may take 5–10 minutes for the GitHub connector to appear.
 
 This exercise includes connecting your GitHub account with your Organization.
 
@@ -91,17 +125,17 @@ This exercise includes connecting your GitHub account with your Organization.
 
 In this exercise, you will learn about configuring the Microsoft Security DevOps GitHub action to automate security checks within your GitHub workflows.
 
-1. Navigate back to **GitHub**, from **Microsoft-Defender-for-Cloud** repository, click on **Actions (1)** and **I understand my workflows, go ahead and enable them (2)**.
+1. Navigate back to GitHub, in the **Microsoft-Defender-for-Cloud** repository, select **Actions (1)**, and then choose **I understand my workflows, go ahead and enable them (2)**.
 
-      ![](images/m4-img24.png)
+      ![](images/cnn-glab4-dvr-ex1-g18.png)
 
 1.	Click on **New workflow**.
 
-      ![](images/m4-img25.png)
+      ![](images/cnn-glab4-dvr-ex1-g19.png)
 
 1.	Next, for **Choose a workflow** click on **set up a workflow yourself**.  
 
-      ![](images/m4-img26.png)
+      ![](images/cnn-glab4-dvr-ex1-g20.png)
 
 1. Enter the name for your workflow file as **msdevopssec.yml (1)**. Then copy and paste the following sample action workflow into the **Edit new file (2)** tab. 
 
@@ -153,35 +187,54 @@ In this exercise, you will learn about configuring the Microsoft Security DevOps
 
       ![](images/m4-img14.png)
 
-      ![](images/m4-img15.png)
+      ![](images/cnn-glab4-dvr-ex1-g21.png)
 
-1. The process can take up to one minute to complete. A workflow gets created in your repositories GitHub folder with the above copied yml file. Select **Actions** and wait for it to complete running. 
+1. The process can take up to 5 minutes to complete. In the GitHub repository, select **Actions (1)**, and wait for the workflow runs under **All workflows (2)** to complete successfully.
 
-      ![](images/m4-img17.png)
+      ![](images/cnn-glab4-dvr-ex1-g22.png)
 
-1.	Once this job completes running, navigate to the **Security (1)** tab and click on **Code scanning (2)**. Code scanning findings will be filtered by specific MSDO tools in GitHub.
+1. In the GitHub repository, select **Security and quality (1)**, choose **Secret scanning (2)**, and verify that the secret scanning alert is displayed under **Secret scanning alerts (3)**.
 
-      ![](images/m4-img28.png)
+      ![](images/cnn-glab4-dvr-ex1-g23.png)
 
       <validation step="842515c8-c248-417b-b028-ef5d3abd0df4" />
 
 > **Note**: To validate this Module you require **GitHub Username** and **Personal Access Token**.
 >  
->   - You can create a **Personal access token**, by navigating to the user **Settings** under your profile and click on **Developer settings** option.
+>   - You can find the GitHub username at the top of the GitHub repository page.
 >     
->     ![](images/git-usersetting.png)
->     
->   - Now select **Personal Access Token (1)**, from the drop-down click on **Tokens (classic) (2)** then select **Generate new token (3)** and click on **Generate new token (classic) (4)**. 
->   
->       ![](images/pat1.png)
->
->   - Enter any name for your PAT in the **Note**, then select the options provided in the screenshot below and click on **Generate Token**. Once the token is generated make sure to **Copy** it and paste it on any text editor such as a notepad. 
+>     ![](images/cnn-glab4-dv-gs-g5.png)
 >  
->       ![](images/pat2.png)
-
-
+>   - You can create a **Personal access token**, by selecting the **Profile (1)** icon, and then choose **Settings (2)**.
+>     
+>     ![](images/cnn-glab4-dvr-ex1-g24.png)
+>   
+>   - In the left navigation pane, select **Developer settings**.
+>     
+>     ![](images/cnn-glab4-dvr-ex1-g25.png)
+>   
+>   - Expand **Personal access tokens (1)**, select **Tokens (classic) (2)**, choose **Generate new token (3)**, and then select **Generate new token (classic) (4)**.
+>   
+>       ![](images/cnn-glab4-dvr-ex1-g26.png)
+>
+>   - Enter any name in the **Note (1)** field for the PAT, and then select the required scope options as shown in the screenshot **(2)**.
+>  
+>       ![](images/cnn-glab4-dvr-ex1-g27.png)
+>
+>   - Scroll down to the bottom of the page, and then select **Generate token**.
+>  
+>       ![](images/cnn-glab4-dvr-ex1-g28.png)
+>
+>   - Once the token is generated, select **Copy**, and then save the token in a text editor such as Notepad.
+>  
+>       ![](images/cnn-glab4-dvr-ex1-g29.png)
+>
+>   - Enter the GitHub username in **GitHubUserName (1)**, paste the copied PAT in **GitHubPersonalAccessToken (2)**, and then select **Submit (3)**.
+>  
+>       ![](images/cnn-glab4-dv-gs-g6.png)
+>
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
-      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
+      - Navigate to the Lab Validation Page from the upper right corner in the lab guide section.<br>
       - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
       - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
 
