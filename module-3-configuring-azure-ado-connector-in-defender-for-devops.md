@@ -30,6 +30,20 @@ In this exercise you will create a new Azure DevOps organization.
 
 1. After signing in, you will be taken to the **We need a few more details** page where the details are already prefilled, then click **Continue**.
 
+    ![](images/prot-dev-ops-d3-g1.png)
+
+1. On the **Get started with Azure DevOps** page, click **Create new organization**.
+
+    ![](images/prot-dev-ops-d3-g2.png)
+
+1. On the **Get started with Azure DevOps** page, click **Continue**.
+
+    ![](images/prot-dev-ops-d3-g3.png)
+
+1. Verify that the Azure subscription is selected under **Select an Azure subscription for billing (1)**, and then click **Continue (2)**.
+
+    ![](images/prot-dev-ops-d3-g4.png)
+
 1. Click on **Organization settings**. 
 
     ![](images/m3-img6.png)
