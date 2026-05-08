@@ -416,15 +416,15 @@ In this exercise, you will create a hosted build agent and pipeline to automate 
 
 1. In the bottom of left navigation page, click **Project settings** option.
 
-        ![](images/m3-img29.png)
+        ![](images/cnn-glab3-fd-ex1-g34.png)
 
 1. In the left navigation page, under **Pipelines** section, click **Agent pools (1)** option. From the top right corner of the page, click **Add pool (2)** button.
 
         ![](images/m3-img30.png)
 
-1. In the **Add agent pool** page, click on the drop down list and select **Azure virtual machine scale set**.
+1. In **Add agent pool**, select **New (1)**, and then choose **Azure virtual machine scale set (2)**.
 
-        ![](images/m3-img31.png)
+        ![](images/cnn-glab3-fd-ex1-g35.png)
  
 1. Select your **subscription (1)** and click **Authorize (2)** button.
 
@@ -446,7 +446,7 @@ In this exercise, you will create a hosted build agent and pipeline to automate 
 
 1. Navigate back to **Azure Portal**, on the **VMSS** page click on **Instances (1)** from the left menu, select both the **Build Agents (2)** and click **Upgrade (3)**.
 
-        ![](images/upgradeinst.png)
+        ![](images/cnn-glab3-fd-ex1-g36.png)
 
    <validation step="07bc50d1-a0f3-4fba-81c2-385606d6d5f3" />
 
@@ -461,31 +461,7 @@ This exercise involves setting up a hosted build agent and pipeline to automate 
 
 The purpose of this exercise is to allow you to see how the extension used by Defender for DevOps will check your pipeline.
 
-1. Login to the GitHub using the following URL on the **Labvm**, by fetching the details from **Environment Details (1)** page on the right tab, click on **Licenses (2)** tab and copy the **GitHub credentials (3)**.
-
-        ```
-        https://github.com/
-        ```
-
-        ![](images/gitcred.png)
- 
-1. For Device Verification Code, use the same credentials as in the previous step, open http://outlook.office.com/ in a private window and enter the same username and password used for GitHub Account login. Copy the verification code and Paste code it in Device verification.
-
-        ![](images/email-verify.png)
-
-1. Navigate to following Git Repository **(1)** and click on **Fork (2)**.
-   
-        ```
-        https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main
-        ```
-     
-        ![](images/m4-img22.png)
-
-1. In **Create a new fork**, disable **Copy the main branch only (1)** and click **Create fork (1)**. 
-
-        ![](images/m4-img23.png)
-
-1. Once the repository is forked click on **Code (1)** and copy the **URL (2)**. Paste into any text editor like *Notepad*.
+1. On the repository click on **Code (1)** and copy the **URL (2)**. Paste into any text editor like *Notepad*.
 
         ![](images/giturl.png)
 
@@ -503,7 +479,7 @@ The purpose of this exercise is to allow you to see how the extension used by De
 
 1. Next, in the left navigation pane, click **Pipelines (1)**. In the right pane, click **Create Pipeline (2)** button.
 
-        ![](images/m3-img36.png)
+        ![](images/cnn-glab3-fd-ex1-g37.png)
 
 1. In the **Where is your code?** page, click **Azure Repos Git**.
 
@@ -563,6 +539,14 @@ The purpose of this exercise is to allow you to see how the extension used by De
    - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+1. Note the Azure DevOps organization name displayed at the top of the page.
+
+        ![](images/cnn-glab3-fd-ex1-g38.png)
+
+1. On the Azure DevOps home page, select **Organization settings**.
+
+       ![](images/cnn-glab3-fd-ex1-g7.png)
 
 This exercise focuses on configuring your pipeline using YAML to observe how the Defender for DevOps extension evaluates and checks the pipeline.
 
