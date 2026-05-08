@@ -15,9 +15,9 @@ You will be able to complete the following exercises:
 
 ### Exercise 1: Connecting your GitHub organization
 
-In this exercise, you will how to connect GitHub account with your Organization. 
+In this exercise, you will learn how to connect your GitHub account with your Organization. 
 
-1. Navigate and login to the GitHub using the following URL on the **Labvm**, by fetching the details from **Environment Details (1)** page on the right tab, click on **Licenses (2)** tab and copy the **GitHub credentials (3)**.
+1. Navigate and log in to GitHub using the following URL on the **Labvm**, by fetching the details from **Environment Details (1)** page on the right tab, click on **Licenses (2)** tab, and copy the **GitHub credentials (3)**.
 
       ```
       https://github.com/
@@ -31,7 +31,7 @@ In this exercise, you will how to connect GitHub account with your Organization.
       http://outlook.office.com/
       ```
 
-   ![](images/email-verify.png)
+      ![](images/email-verify.png)
 
 1. Navigate to following Git Repository **(1)** and click on **Fork (2)**.
    
@@ -59,9 +59,9 @@ In this exercise, you will how to connect GitHub account with your Organization.
 
 1. Go to the Azure portal by using the following URL.
 
-    ```
-    http://portal.azure.com/
-    ```
+      ```
+      http://portal.azure.com/
+      ```
 
 1. Search for **Microsoft Defender for Cloud (1)**, and then select it from the search results **(2)**.
 
@@ -105,7 +105,7 @@ In this exercise, you will how to connect GitHub account with your Organization.
   
       ![](images/cnn-glab4-dvr-ex1-g14.png)
 
-1. After the DevOps security app installation is completed, select **Next : Review and generate >**.
+1. After the DevOps security app installation is completed, select **Next: Review and generate >**.
 
       ![](images/cnn-glab4-dvr-ex1-g15.png)
 
@@ -234,7 +234,7 @@ In this exercise, you will learn about configuring the Microsoft Security DevOps
 >       ![](images/cnn-glab4-dv-gs-g6.png)
 >
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
-      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
+      - Navigate to the Lab Validation Page from the upper right corner in the lab guide section.<br>
       - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
       - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
 
