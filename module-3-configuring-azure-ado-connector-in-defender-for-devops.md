@@ -46,45 +46,117 @@ In this exercise you will create a new Azure DevOps organization.
 
 1. Click on **Organization settings**. 
 
-    ![](images/m3-img6.png)
+    ![](images/cnn-glab3-fd-ex1-g1.png)
 
-1. Next, select **Policies (1)** under **Security** and set the toggle button **On** for **Third-party application access via OAuth (2)** and **Allow public projects (3)**. Then click **Save (4)** on **Change policy setting** pop-up.
+1. Under **Security**, select **Policies (1)**, and then enable **Third-party application access via OAuth (2)**.
 
-    ![](images/m3-img46.png)
+    ![](images/cnn-glab3-fd-ex1-g2.png)
 
-    ![](images/m3-img47.png)
+1. Select **Azure DevOps (1)** to navigate to the home page, in the **Create a project to get started** pane enter **ODL_User_<inject key="Deployment ID" enableCopy="false"/>** in **Project name (2)**, and then select **+ Create project (3)**.
 
-1. Click on **Azure Devops (1)** to navigate back to the home page. In the **Create a project to get started** pane, enter the **Project name** as **ODL_User_<inject key="Deployment ID" enableCopy="false"/> (2)** set **Visibility** to **Public (3)** and click **+ Create project (4)**. 
+    ![](images/cnn-glab3-fd-ex1-g3.png)
 
-    ![](images/m3-img48.png)
+1. Navigate and log in to GitHub using the following URL on the **Labvm**, by fetching the details from **Environment Details (1)** page on the right tab, click on **Licenses (2)** tab, and copy the **GitHub credentials (3)**.
 
-1. Navigate to **Microsoft Defender for Cloud** on the **Azure Portal**. Click on **Environment Settings (1)** click the **Add environment (2)** button and click **Azure DevOps (3)** option. 
+      ```
+      https://github.com/
+      ```
 
-    ![](images/m3a-img1.png)
+      ![](images/cnn-glab4-dvr-ex1-g1.png)
 
-1. Enter the **Connector name** for the connector as `CNAPP-Devops` **(1)**, select your **Subscription (2)**, select **asclab (3)** resource group, select any **Region (3)**. Select **Next : Configure access > (5)**.
+1. For **Device Verification Code**, use the same credentials as in the previous step, open a private browser window, sign in with the same username and password used for the GitHub account login, copy the verification code, and then paste it into **Device verification**.
 
-    ![](images/cnapp4.png)
+      ```
+      http://outlook.office.com/
+      ```
 
-1. Click **Authorize** button. If this is the first time you’re authorizing your DevOps connection, you’ll receive a pop-up screen, that will ask your permission to authorize. Scroll down the pop-up window screen and click the **Accept** button as shown in the sample below:
+      ![](images/email-verify.png)
 
-    ![](images/m3a-img4.png)
+1. Navigate to following Git Repository **(1)** and click on **Fork (2)**.
+   
+      ```
+      https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main
+      ```
+     
+    ![](images/m4-img22.png)
 
-    ![](images/m3-img5.png)
+1. In **Create a new fork**, verify the **Owner (1)** selection, disable **Copy the main branch only (2)**, and then select **Create fork (3)**.
 
-   > **Note**: When you click **Accept** in your Azure DevOps, you’ll notice the proof of Authorization to the **Microsoft Security DevOps** App. You can find this in your Azure ADO organization, under the **Personal Access tokens** / **User Settings** / **Authorizatons**.  
+      ![](images/cnn-glab4-dvr-ex1-g2.png)   
 
-1. After the authorization is complete, select **All existing and future organizations (1)**.	Click **Review and genrate (2)** button to continue.
+1. On the **Microsoft-Defender-for-cloud** repository,click on **Settings**.
 
-      ![](images/m3a-img8.png)
+      ![](images/cnn-glab4-dvr-ex1-g3.png) 
 
-1. Click on **Create**.
+1. Expand **Actions (1)**, and then select **General (2)**.
 
-      ![](images/m3a-img9.png)
-      
-1. After some minutes you will see the Azure DevOps connector in the **Environment settings** page and in about 15 minutes, you will start to seeing the total resources number populating.
+      ![](images/cnn-glab4-dvr-ex1-g4.png) 
 
-      ![](images/m3-img49.png)
+1. Under **Workflow permissions**, select **Read and write permissions (1)**, and then choose **Save (2)**.
+
+      ![](images/cnn-glab4-dvr-ex1-g5.png) 
+
+1. Go to the Azure portal by using the following URL.
+
+      ```
+      http://portal.azure.com/
+      ```
+
+1. Search for **Microsoft Defender for Cloud (1)**, and then select it from the search results **(2)**.
+
+      ![](images/cnn-glab4-dvr-ex1-g6.png) 
+
+1. In the left navigation pane, expand **Management (1)**, select **Environment settings (2)**, choose **Add environment (3)**, and then select **GitHub (4)**.
+
+      ![](images/cnn-glab4-dvr-ex1-g7.png)
+
+1. In the **GitHub connection** page, configure the following settings:
+
+      - Enter `CNAPP-Devops` in **Connector name (1)**.
+      - Select your **Subscription (2)**.
+      - Select **asclab (3)** as the **Resource group**.
+      - Select any **Location (4)**.
+      - Select **Next: Select capabilities > (5)** to continue.
+
+          ![](images/cnn-glab4-dvr-ex1-g8.png)
+        
+1. In **Select capabilities**, enable **Defender CSPM (1)**, and then select **Next : Configure access > (2)**.
+
+      ![](images/cnn-glab4-dvr-ex1-g9.png)
+
+1. In **Configure access**, select **Authorize** under **Authorize DevOps security**.
+
+      ![](images/cnn-glab4-dvr-ex1-g10.png)
+
+1. In the pop-up window, select **Authorize**.
+
+      ![](images/cnn-glab4-dvr-ex1-g11.png)
+
+1. Under **Install DevOps security app**, select **Install**.
+
+      ![](images/cnn-glab4-dvr-ex1-g12.png)
+
+1. In **Install Microsoft Security DevOps**, select the **cloudlabsuser** GitHub account.
+
+      ![](images/cnn-glab4-dvr-ex1-g13.png)
+
+1. In **Install Microsoft Security DevOps**, select **All repositories (1)**, and then choose **Install (2)**.
+  
+      ![](images/cnn-glab4-dvr-ex1-g14.png)
+
+1. After the DevOps security app installation is completed, select **Next: Review and generate >**.
+
+      ![](images/cnn-glab4-dvr-ex1-g15.png)
+
+1. Review the configuration settings, and then select **Create**.
+
+      ![](images/cnn-glab4-dvr-ex1-g16.png)
+
+1. In the left navigation pane, expand **Management (1)**, select **Environment settings (2)**, refresh the page by selecting **Refresh (3)**, and verify that the **CNAPP-git (4)** GitHub connector is displayed.
+
+      ![](images/cnn-glab4-dvr-ex1-g17.png)
+
+      > **Note:** It may take 5–10 minutes for the GitHub connector to appear.
     
 
    <validation step="1bdfcec7-cc4e-4c87-ad14-bb67c4034367" />    
@@ -102,7 +174,7 @@ In this exercise, you will configure the Microsoft Security DevOps Azure DevOps 
 
 1. Navigate back to [Azure DevOps](https://dev.azure.com) tab open in your browser. In the right corner, click in the **Shopping bag icon (1)** and click **Browse marketplace (2)** option.
 
-       ![](images/m3-img10.png)
+       ![](images/cnn-glab3-fd-ex1-g5.png)
 
 1. In the marketplace search and select **Microsoft Security DevOps** extension.  
 
@@ -114,7 +186,7 @@ In this exercise, you will configure the Microsoft Security DevOps Azure DevOps 
 
 1. Choose your **Organization (1)** from the dropdown menu, select **Install (2)**.
 
-       ![](images/m3-img13.png)
+       ![](images/cnn-glab3-fd-ex1-g6.png)
 
        >**Note:** If this is already installed, directly move to next exercise and continue further.
 
@@ -122,7 +194,11 @@ In this exercise, you will configure the Microsoft Security DevOps Azure DevOps 
 
        ![](images/m3-img14.png)
 
-1. From **Organization settings**, click on **Extensions (1)** under **Installed (2)** extensions you can view the **Microsoft Security DevOps (3)** extension that is installed. 
+1. On the Azure DevOps home page, select **Organization settings**.
+
+       ![](images/cnn-glab3-fd-ex1-g7.png)
+
+1. Click on **Extensions (1)** under **Installed (2)** extensions you can view the **Microsoft Security DevOps (3)** extension that is installed. 
 
        ![](images/m3-img15.png)
 
@@ -138,9 +214,9 @@ In this exercise, In order to view the scan results (when you execute the pipeli
 
        ![](images/m3-img10.png)
      
-1. In the marketplace search and select **SARIF SANST Scans** extension.
+1. In the marketplace search and select **SARIF SANST Scans Tab** extension.
 
-       ![](images/m3-img16.png)
+       ![](images/cnn-glab3-fd-ex1-g8.png)
 
 1. Next click on **Get it free**.
 
@@ -148,13 +224,17 @@ In this exercise, In order to view the scan results (when you execute the pipeli
 
 1. Choose your **Organization (1)** from the dropdown menu, select **Install (2)**.
 
-       ![](images/m3-img18.png)
+       ![](images/cnn-glab3-fd-ex1-g9.png)
 
 1. Click on **Proceed to Organization**. 
 
        ![](images/m3-img19.png)
 
-1. From **Organization settings**, click on **Extensions (1)** under **Installed (2)** extensions you can view the **SARIF SANST Scans (3)** extension that is installed. 
+1. On the Azure DevOps home page, select **Organization settings**.
+
+       ![](images/cnn-glab3-fd-ex1-g7.png)
+
+1. Click on **Extensions (1)** under **Installed (2)** extensions you can view the **SARIF SANST Scans (3)** extension that is installed. 
 
        ![](images/m3-img20.png)
 
@@ -166,59 +246,94 @@ In this exercise, you will create a hosted build agent and pipeline to automate 
 
 1. In the **Azure Portal**, click in the search bar, type **vmss** and then click **Virtual machine scale sets**. 
 
-       ![](images/m3-img21.png)
+       ![](images/cnn-glab3-fd-ex1-g10.png)
 
 1. Click **Create** button.
 
-       ![](images/m3-img22.png)
+       ![](images/cnn-glab3-fd-ex1-g11.png)
 
-1. In the Create a virtual machine scale set page, select your **Subscription (1)**, select **asclab (2)** resource group, provide the **Virtual machine scale set name** as `build-agent` **(3)**, for **Region** select **<inject key="Resource group Location" enableCopy="false" /> (4)**, for **Orchestration mode** select **Uniform (5)** leave all other options as is and change the image to **Windows Server 2022 Datacentre: Azure Edition Core - x64 Gen2 (6)**.
+1. In the **Create a Virtual Machine Scale Set (VMSS)** page, configure the following settings:
+      - Select your **Subscription (1)**.
+      - Select **asclab (2)** as the **Resource group**.
+      - Enter **build-agent** in **Virtual machine scale set name (3)**.
+      - Select **<inject key="Resource group Location" enableCopy="false" /> (4)** for **Region**.
 
-       ![](images/m3-img50.png)
+        ![](images/cnn-glab3-fd-ex1-g12.png)
 
-1. In the same page, enter the following username and password for **VMSS** and click **Networking** tab.
+1. In the **Create a Virtual Machine Scale Set (VMSS)** page, configure the following settings:
+      - Select **Uniform (1)** for **Orchestration mode**.
+      - Verify **Standard (2)** is selected for **Security type**.
+      - Select **Manually update the capacity (3)** for **Scaling mode**.
+      - Select **See all images (4)** under **Image**.
 
-      - **Username**: `demouser` 
-      - **Password**: `demo!pass123`
-      - **Confirm password**: `demo!pass123`
+        ![](images/cnn-glab3-fd-ex1-g13.png)
 
-        ![](images/m3-img24.1.png)
+1. In **Select an image**, search for **Windows Server (1)**, and then select the **Select (2)** drop-down for the **Windows Server** image.
 
-1. In the Networking tab, click on **Edit** under **Network Interface**.
+       ![](images/cnn-glab3-fd-ex1-g14.png)
 
-       ![](images/m3-img53.png)
+1. From the image list, select **Windows Server 2025 Datacenter - x64 Gen 2**.
 
-1. In **Edit Network Interface** tab, set the toggle button to **Enabled** for **Public IP address (1)** and click on **OK**.
+       ![](images/cnn-glab3-fd-ex1-g15.png)
 
-       ![](images/editnic.png)
+1. In the same page, configure the following settings for **VMSS**:
+
+      - Verify **Standard D2s v3 (1)** is selected for **Size**.
+      - Enter `demouser` in **Username (2)**.
+      - Enter `demo!pass123` in **Password (3)**.
+      - Enter `demo!pass123` in **Confirm password (4)**.
+
+        ![](images/cnn-glab3-fd-ex1-g16.png)
+
+1. Scroll up to the top of the page, and then select the **Networking** tab.
+
+       ![](images/cnn-glab3-fd-ex1-g17.png)
+
+1. Under **Network interface**, select **Edit** for the network interface.
+
+       ![](images/cnn-glab3-fd-ex1-g18.png)
+
+1. In **Edit network interface**, enable **Public IP address (1)**, and then select **OK (2)**.
+
+       ![](images/cnn-glab3-fd-ex1-g19.png)
  
 1. Once you are back on the **Networking** tab click **Review + Create**.
 
-       ![](images/m3-img55.png)
+       ![](images/cnn-glab3-fd-ex1-g20.png)
 
 1. In the next page, you should see that all the validation are passed and now you can click **Create** button. The deployment will take a few minutes to complete.
 
-       ![](images/m3-img51.1.png)
+       ![](images/cnn-glab3-fd-ex1-g21.png)
 
 1. Once the deployment is completed, click on **Go to resource** button.
 
-       ![](images/m3-img26.png)
+       ![](images/cnn-glab3-fd-ex1-g22.png)
  
 1. In the **build-agent** page, click on **Instances** option in the left. Confirm that the build-agents are **Running**. 
 
-        ![](images/m3a-img27.png)
+        ![](images/cnn-glab3-fd-ex1-g23.png)
 
-1. Navigate to **build-agent_1** and click on **Network Setting (1)**, click on **create port rule (2)** and select **inbound port rule (3)**.
+1. In **build-agent | Network settings**, expand **Networking (1)**, select **Network settings (2)**, choose **+ Create port rule (3)**, and then select **Inbound port rule (4)**.
 
         ![](images/addport1.png)
 
-1. Enter `3389` **(1)** under **Destination port range** and click **Add (2)**.
-     
-        ![](images/rdp.png)
+1. In **Add inbound security rule**, configure the following settings:
+
+      - Enter **3389** in **Destination port ranges (1)**.
+      - Enter **AllowRDP** in **Name (1)**.
+      - Select **Add (2)**.
+
+        ![](images/cnn-glab3-fd-ex1-g26.png)
+
+        ![](images/cnn-glab3-fd-ex1-g27.png)
+
+1. In the left navigation pane, select **Instances (1)**, and then select **build-agent_1 (2)**.
+
+        ![](images/cnn-glab3-fd-ex1-g28.png)
 
 1. From the **Overview (1)** page, copy the **Public IP address (2)** and paste in a text editor like ***Notepad***.
    
-        ![](images/copyip.png)
+        ![](images/cnn-glab3-fd-ex1-g29.png)
 
 1. On your **Labvm**, search for **rdp** in windows search and select **Remote Desktop Connection**.
 
@@ -235,9 +350,17 @@ In this exercise, you will create a hosted build agent and pipeline to automate 
 
          ![](images/userpwd.png)
 
-1. Once you enter the remote session, search for **powershell** in windows search and select **Powershell ISE**.
+1. Once you connect to the VM using RDP, in the **Send diagnostic data to Microsoft** window, select **Accept**.
 
-        ![](images/powershellise.png)
+        ![](images/cnn-glab3-fd-ex1-g30.png)
+
+1. In the Windows search bar, enter **powershell ISE (1)**, and then select **Run as administrator (2)** for **Windows PowerShell ISE**.
+
+        ![](images/cnn-glab3-fd-ex1-g32.png)
+
+1. In **Windows PowerShell ISE (x86)**, select **New Script**.
+
+        ![](images/cnn-glab3-fd-ex1-g33.png)
 
 1. Paste the following commands to install ***nodejs (1)*** and click on **Run (2)** button. 
 
