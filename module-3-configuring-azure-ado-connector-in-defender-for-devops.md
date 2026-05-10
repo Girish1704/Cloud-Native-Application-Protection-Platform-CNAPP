@@ -272,9 +272,9 @@ In this exercise, you will create a hosted build agent and pipeline to automate 
 
        ![](images/cnn-glab3-fd-ex1-g14.png)
 
-1. From the image list, select **Windows Server 2025 Datacenter - x64 Gen 2**.
+1. From the image list, select **Windows Server 2022 Datacenter: Azure Edition - x64 Gen 2**.
 
-       ![](images/cnn-glab3-fd-ex1-g15.png)
+       ![](images/cnn-glab3-fd-ex1-g41.png)
 
 1. In the same page, configure the following settings for **VMSS**:
 
@@ -303,7 +303,7 @@ In this exercise, you will create a hosted build agent and pipeline to automate 
 
 1. In the next page, you should see that all the validation are passed and now you can click **Create** button. The deployment will take a few minutes to complete.
 
-       ![](images/cnn-glab3-fd-ex1-g21.png)
+       ![](images/cnn-glab3-fd-ex1-g42.png)
 
 1. Once the deployment is completed, click on **Go to resource** button.
 
@@ -349,10 +349,6 @@ In this exercise, you will create a hosted build agent and pipeline to automate 
       - **Password**: `demo!pass123`
 
          ![](images/userpwd.png)
-
-1. Once you connect to the VM using RDP, in the **Send diagnostic data to Microsoft** window, select **Accept**.
-
-        ![](images/cnn-glab3-fd-ex1-g30.png)
 
 1. In the Windows search bar, enter **powershell ISE (1)**, and then select **Run as administrator (2)** for **Windows PowerShell ISE**.
 
@@ -547,6 +543,14 @@ The purpose of this exercise is to allow you to see how the extension used by De
 1. On the Azure DevOps home page, select **Organization settings**.
 
        ![](images/cnn-glab3-fd-ex1-g7.png)
+
+1. In the left navigation pane, select **Billing (1)**, and then choose **Change billing (2)**.
+
+       ![](images/cnn-glab3-fd-ex1-g43.png)
+
+1. In **Change billing**, select **Remove billing (1)**, and then choose **Save (2)**.
+
+       ![](images/cnn-glab3-fd-ex1-g44.png)
 
 This exercise focuses on configuring your pipeline using YAML to observe how the Defender for DevOps extension evaluates and checks the pipeline.
 
