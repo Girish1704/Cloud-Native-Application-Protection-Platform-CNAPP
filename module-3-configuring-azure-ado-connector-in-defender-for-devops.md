@@ -209,10 +209,10 @@ In order to view the scan results (when you execute the pipelines), in an easier
 18. Paste the following commands to install ***nodejs (1)*** and click on **Run (2)** button. 
 
      ```
-    #Install nodejs v16.8.0
+    #Install nodejs v20.11.1
     $WebClient = New-Object System.Net.WebClient
-    $WebClient.DownloadFile("https://nodejs.org/download/release/v16.8.0/node-v16.8.0-x64.msi","C:\node-v16.8.0-x64.msi")
-    $arguments = "/i `"C:\node-v16.8.0-x64.msi`" /quiet"
+    $WebClient.DownloadFile("https://nodejs.org/download/release/v20.11.1/node-v20.11.1-x64.msi","C:\node-v20.11.1-x64.msi")
+    $arguments = "/i `"C:\node-v20.11.1-x64.msi`" /quiet"
     Start-Process msiexec.exe -ArgumentList $arguments -Wait
     sleep 5
       ```
@@ -339,18 +339,18 @@ The purpose of this exercise is to allow you to see how the extension used by De
       trigger: none
       pool: windows-build-agents
       steps:
-      - task: UseDotNet@2
-        displayName: 'Use dotnet'
+      - task: NodeTool@0
+        displayName: 'Install Node.js 20'
         inputs:
-          version: 3.1.x
+          versionSpec: '20.x'
       - task: UseDotNet@2
-        displayName: 'Use dotnet'
-        inputs:
-          version: 5.0.x
-      - task: UseDotNet@2
-        displayName: 'Use dotnet'
+        displayName: 'Use dotnet 6'
         inputs:
           version: 6.0.x
+      - task: UseDotNet@2
+        displayName: 'Use dotnet 8'
+        inputs:
+          version: 8.0.x
       - task: MicrosoftSecurityDevOps@1
         displayName: 'Microsoft Security DevOps'
       ```
