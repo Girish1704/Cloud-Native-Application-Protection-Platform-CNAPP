@@ -361,10 +361,10 @@ In this exercise, you will create a hosted build agent and pipeline to automate 
 1. Paste the following commands to install ***nodejs (1)*** and click on **Run (2)** button. 
 
         ```
-        #Install nodejs v16.8.0
+        #Install nodejs v20.11.1
         $WebClient = New-Object System.Net.WebClient
-        $WebClient.DownloadFile("https://nodejs.org/download/release/v16.8.0/node-v16.8.0-x64.msi","C:\node-v16.8.0-x64.msi")
-        $arguments = "/i `"C:\node-v16.8.0-x64.msi`" /quiet"
+        $WebClient.DownloadFile("https://nodejs.org/download/release/v20.11.1/node-v20.11.1-x64.msi","C:\node-v20.11.1-x64.msi")
+        $arguments = "/i `"C:\node-v20.11.1-x64.msi`" /quiet"
         Start-Process msiexec.exe -ArgumentList $arguments -Wait
         sleep 5
         ```
@@ -397,7 +397,7 @@ In this exercise, you will create a hosted build agent and pipeline to automate 
 1. In the command prompt, run the following npm command.
 
         ```
-        npm.cmd install --loglevel error eslint@7.32.0 typescript@4.3.2 @microsoft/eslint-plugin-sdl@0.1.7 eslint-plugin-react@7.24.0 eslint-plugin-security@1.4.0 @typescript-eslint/typescript-estree@4.27.0 @typescript-eslint/parser@4.27.0 @typescript-eslint/eslint-plugin@4.27.0 @microsoft/eslint-formatter-sarif@2.1.5 eslint-plugin-node@11.1.0 --prefix C:\a\_msdo\packages\node_modules\eslint –global
+        npm.cmd install --loglevel error eslint@7.32.0 typescript@4.3.2 @microsoft/eslint-plugin-sdl@0.1.7 eslint-plugin-react@7.24.0 eslint-plugin-security@1.4.0 @typescript-eslint/typescript-estree@4.27.0 @typescript-eslint/parser@4.27.0 @typescript-eslint/eslint-plugin@4.27.0 @microsoft/eslint-formatter-sarif@2.1.5 eslint-plugin-node@11.1.0 --prefix C:\a\_msdo\packages\node_modules\eslint --global
         ```
      
         ![](images/npm1.png)
@@ -495,18 +495,18 @@ The purpose of this exercise is to allow you to see how the extension used by De
         trigger: none
         pool: windows-build-agents
         steps:
-        - task: UseDotNet@2
-          displayName: 'Use dotnet'
+        - task: NodeTool@0
+          displayName: 'Install Node.js 20'
           inputs:
-            version: 3.1.x
+            versionSpec: '20.x'
         - task: UseDotNet@2
-          displayName: 'Use dotnet'
-          inputs:
-            version: 5.0.x
-        - task: UseDotNet@2
-          displayName: 'Use dotnet'
+          displayName: 'Use dotnet 6'
           inputs:
             version: 6.0.x
+        - task: UseDotNet@2
+          displayName: 'Use dotnet 8'
+          inputs:
+            version: 8.0.x
         - task: MicrosoftSecurityDevOps@1
           displayName: 'Microsoft Security DevOps'
         ```
