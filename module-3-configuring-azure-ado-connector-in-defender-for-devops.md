@@ -350,9 +350,9 @@ In this exercise, you will create a hosted build agent and pipeline to automate 
 
          ![](images/userpwd.png)
 
-1. In the Windows search bar, enter **powershell ISE (1)**, and then select **Run as administrator (2)** for **Windows PowerShell ISE**.
+1. In the Windows search bar, enter **Windows PowerShell ISE (1)**, and then select **Run as administrator (3)** for **Windows PowerShell ISE (2)**.
 
-        ![](images/cnn-glab3-fd-ex1-g32.png)
+        ![](images/cnn-glab2-ft-ex1-g13.png)
 
 1. In **Windows PowerShell ISE (x86)**, select **New Script**.
 
