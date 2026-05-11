@@ -18,29 +18,29 @@ You will be able to complete the following exercises:
 
 In this exercise, you will verify the installation of Docker to ensure it is properly set up and functioning on your system.
 
-1. From the **Virtual Machine** desktop, click on **Start**, and click on **Docker Desktop**.
+1. From the **Virtual Machine** desktop, click on **Start (1)**, and click on **Docker Desktop (2)**.
  
-    ![](images/docker1.png)
+    ![](images/cnn-glab2-ft-ex1-g3.png)
 
 1. Click **Accept** on **Docker Subscription Service Agreement**.
 
     ![](images/m2-img2.png)
 
-1. Complete the installation of the Docker Desktop, click on **Finish**.
+1. To complete the Docker Desktop installation, select **Finish**.
 
-    ![](images/docker2.png)
+    ![](images/cnn-glab2-ft-ex1-g4.png)
 
 1. In Welcome to Docker Desktop, click on **Continue without signing in**.
 
-    ![](images/docker3.png)
+    ![](images/cnn-glab2-ft-ex1-g5.png)
 
 1. In the **Tell us about the work you do**, Click on **Skip**.
 
-    ![](images/cnapp1.png)
+    ![](images/cnn-glab2-ft-ex1-g6.png)
 
 1. Wait for the **Docker Engine** to start. 
 
-    ![](images/docker5.png)
+    ![](images/cnn-glab2-ft-ex1-g7.png)
 
     >**Note:** The startup process will take about five minutes. If it takes longer, restart the virtual machine.
     
@@ -66,15 +66,15 @@ In this exercise, Now you will use Docker to download a vulnerable image from it
 
 1. Navigate to the Azure Portal, search for **Container registries** **(1)** in the search box and select **Container registries** **(2)**.
 
-   ![Container registry in Azure](images/serach-cr1.png)
+   ![Container registry in Azure](images/cnn-glab2-ft-ex1-g8.png)
 
 2. Open the Container Registry named **asclabcrxxxxxx**.
 
-   ![Container registry open](images/select-cr.png)
+   ![Container registry open](images/cnn-glab2-ft-ex1-g9.png)
 
 3. In the Overview of it, verify the **Login server** name only. 
 
-   ![ACR server name](images/copy-crname1.png)
+   ![ACR server name](images/cnn-glab2-ft-ex1-g10.png)
 
 4. Switch back to PowerShell, you will also need to login to your Azure subscription via **az login**.
    
@@ -114,13 +114,13 @@ In this exercise, Now you will use Docker to download a vulnerable image from it
 
    ![Docker images](images/docker-pull2.png)
 
-9. Create an alias of the image by running the following command and make sure to replace **NameOfServer** to **<inject key="Container registry" enableCopy="true"/>** and then run the below command:
+9. Create an alias of the image by running the following command:
 
    ```
    docker tag vulnerables/web-dvwa <inject key="Container registry" enableCopy="true"/>.azurecr.io/vulnerables/web-dvwa
    ```
 
-10. Check again the image on your local repository by running the command and make sure to replace **NameOfServer** to **<inject key="Container registry" enableCopy="true"/>** and then run the below command:
+10. Check again the image on your local repository by running the command:
 
     ```
     docker images <inject key="Container registry" enableCopy="true"/>.azurecr.io/vulnerables/web-dvwa
@@ -129,7 +129,7 @@ In this exercise, Now you will use Docker to download a vulnerable image from it
     ![Docker images](images/docker-image.png)
 
 
-11. Run docker push to upload the new image to the azure repository and generate image scan (it can take some time), using the below command and make sure to replace **NameOfServer** to **<inject key="Container registry" enableCopy="true"/>** and then run the below command:
+11. Run docker push to upload the new image to the azure repository and generate image scan (it can take some time), using the below command:
 
     ```
     docker push <inject key="Container registry" enableCopy="true"/>.azurecr.io/vulnerables/web-dvwa
